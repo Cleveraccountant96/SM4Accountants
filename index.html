@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Musab Shoaib & Co – Bookkeeping & Accounts for Small Businesses</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap">
+  <div class="logo" id="firm">Musab Shoaib & Co</div>
+  <nav><a href="#services">Services</a><a href="#about">About</a><a href="#forms">Client forms</a><a href="#admin" id="adminLink" hidden>Submissions</a></nav>
+</div></header>
+
+<main class="wrap">
+<div class="hero">
+  <h1>Clear, reliable accounts for small and growing businesses</h1>
+  <p>AAT-qualified bookkeeping and accounts support, using the software you already use. Spend less time on paperwork and more on your business.</p>
+  <p><a class="btn" href="#forms">Become a client</a><a class="btn alt" href="#forms">Send an enquiry</a></p>
+</div>
+
+<section id="services">
+  <h2>Services</h2>
+  <div class="grid">
+    <div class="card"><h3>Bookkeeping</h3><p>Purchase and sales ledgers, bank reconciliations and day-to-day record keeping, kept accurate and up to date.</p></div>
+    <div class="card"><h3>Year-end support</h3><p>Journals, accruals and prepayments, and tidy records ready for your year-end accounts.</p></div>
+    <div class="card"><h3>VAT returns</h3><p>Preparation of your VAT return from your records, with clear workings you can review.</p></div>
+    <div class="card"><h3>Credit control</h3><p>Accounts receivable monitoring so customers pay on time and cash flow stays healthy.</p></div>
+    <div class="card"><h3>Software setup & clean-up</h3><p>Help with Xero and Sage 50: setup, tidying messy files and training your team.</p></div>
+    <div class="card"><h3>Management reports</h3><p>Simple monthly reports so you know where the business stands.</p></div>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About</h2>
+  <div class="card"><p>I'm a fully AAT-qualified accountant (FMAAT) with hands-on experience across several accounts teams. I work with small and medium-sized businesses and aim to be responsive, accurate and easy to deal with. Tell me about your business using the forms below and I'll be in touch.</p></div>
+</section>
+
+<section id="forms">
+  <h2>Client forms</h2>
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" aria-selected="true" data-t="enquiry">General enquiry</button>
+    <button class="tab" role="tab" aria-selected="false" data-t="onboard">New client onboarding</button>
+  </div>
+
+  <div class="card">
+  <form id="enquiry" data-type="enquiry" novalidate>
+    <div class="row">
+      <div><label for="e-name">Full name *</label><input id="e-name" name="name" required autocomplete="name"></div>
+      <div><label for="e-biz">Business name</label><input id="e-biz" name="business" autocomplete="organization"></div>
+    </div>
+    <div class="row">
+      <div><label for="e-mail">Email *</label><input id="e-mail" name="email" type="email" required autocomplete="email"></div>
+      <div><label for="e-tel">Phone</label><input id="e-tel" name="phone" type="tel" autocomplete="tel"></div>
+    </div>
+    <div><label for="e-msg">How can I help? *</label><textarea id="e-msg" name="message" rows="4" required></textarea></div>
+    <label class="checks"><span><input type="checkbox" name="consent" required> I agree to my details being stored so you can respond to me. *</span></label>
+    <div><button class="btn" type="submit">Send enquiry</button></div>
+    <div class="msg" role="status"></div>
+  </form>
+
+  <form id="onboard" data-type="onboarding" novalidate hidden>
+    <div class="row">
+      <div><label>Contact name *</label><input name="name" required autocomplete="name"></div>
+      <div><label>Email *</label><input name="email" type="email" required autocomplete="email"></div>
+    </div>
+    <div class="row">
+      <div><label>Phone</label><input name="phone" type="tel"></div>
+      <div><label>Business / trading name *</label><input name="business" required></div>
+    </div>
+    <div class="row">
+      <div><label>Business type *</label>
+        <select name="entity" required><option value="">Select…</option><option>Sole trader</option><option>Partnership</option><option>Limited company</option><option>LLP</option><option>Charity / other</option></select></div>
+      <div><label>Companies House number</label><input name="companyNumber" inputmode="numeric"></div>
+    </div>
+    <div class="row">
+      <div><label>Registered address</label><input name="address" autocomplete="street-address"></div>
+      <div><label>Postcode</label><input name="postcode" autocomplete="postal-code"></div>
+    </div>
+    <div class="row">
+      <div><label>Nature of business</label><input name="nature"></div>
+      <div><label>Year-end date</label><input name="yearEnd" type="date"></div>
+    </div>
+    <div class="row">
+      <div><label>VAT registered?</label>
+        <select name="vat"><option value="">Select…</option><option>Yes</option><option>No</option><option>Not sure</option></select></div>
+      <div><label>VAT scheme / return frequency</label>
+        <select name="vatFreq"><option value="">Select…</option><option>Quarterly</option><option>Monthly</option><option>Annual accounting</option><option>Flat rate scheme</option><option>Not applicable</option></select></div>
+    </div>
+    <div class="row">
+      <div><label>Accounting software</label>
+        <select name="software"><option value="">Select…</option><option>Xero</option><option>Sage 50</option><option>Other</option><option>Spreadsheets</option><option>None yet</option></select></div>
+      <div><label>Approx. transactions per month</label>
+        <select name="volume"><option value="">Select…</option><option>Under 50</option><option>50–150</option><option>150–400</option><option>400+</option></select></div>
+    </div>
+    <fieldset class="checks"><legend>Services needed</legend>
+      <label><input type="checkbox" name="svc" value="Bookkeeping"> Bookkeeping</label>
+      <label><input type="checkbox" name="svc" value="Year-end support"> Year-end support</label>
+      <label><input type="checkbox" name="svc" value="VAT returns"> VAT returns</label>
+      <label><input type="checkbox" name="svc" value="Credit control"> Credit control</label>
+      <label><input type="checkbox" name="svc" value="Software setup"> Software setup / clean-up</label>
+      <label><input type="checkbox" name="svc" value="Management reports"> Management reports</label>
+    </fieldset>
+    <div class="row">
+      <div><label>Preferred start date</label><input name="start" type="date"></div>
+      <div><label>Preferred contact method</label>
+        <select name="contactPref"><option>Email</option><option>Phone</option></select></div>
+    </div>
+    <div><label>Anything else I should know?</label><textarea name="notes" rows="3"></textarea></div>
+    <p class="note">Please don't enter bank details, passwords or ID numbers here. I'll arrange a secure way to collect anything sensitive.</p>
+    <label class="checks"><span><input type="checkbox" name="consent" required> I agree to my details being stored for the purpose of onboarding me as a client. *</span></label>
+    <div><button class="btn" type="submit">Submit details</button></div>
+    <div class="msg" role="status"></div>
+  </form>
+  </div>
+</section>
+
+<section id="admin" hidden>
+  <h2>Submissions <span class="note" id="count"></span></h2>
+  <p><button class="btn alt" style="margin:0" id="csv" type="button">Download CSV</button></p>
+  <div class="card tbl"><table>
+    <thead><tr><th>Received</th><th>Type</th><th>Name</th><th>Business</th><th>Email</th><th>Details</th></tr></thead>
+    <tbody id="rows"><tr><td colspan="6" class="note">No submissions yet.</td></tr></tbody>
+  </table></div>
+</section>
+</main>
+
+<footer><div class="wrap">© <span id="yr"></span> Musab Shoaib & Co · Details you submit are used only to respond to you and to provide accounting services.</div></footer>
+
+<script src="app.js"></script>
+</body>
+</html>
